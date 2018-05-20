@@ -15,13 +15,32 @@
         android:id="@+id/Txt_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
+        android:layout_alignBaseline="@+id/Txt_poor"
+        android:layout_alignBottom="@+id/Txt_poor"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/Txt_poor"
+        android:layout_toStartOf="@+id/Txt_poor"
         android:text="@string/title"
         android:textColor="#000000"
         android:textColorLink="#ffffff"
         android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/Txt_poor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/poor"
+        android:textColor="#000000"
+        android:textColorLink="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/Img_coal"
@@ -30,6 +49,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/Txt_title"
-        android:layout_marginTop="40dp"
+        android:contentDescription="image of a piece of coal"
         app:srcCompat="@drawable/coal" />
 </RelativeLayout>
